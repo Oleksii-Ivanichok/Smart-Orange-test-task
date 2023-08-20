@@ -1,0 +1,104 @@
+.our__projects-row {
+    display: flex;
+    flex-direction: column;
+}
+.our__projects-header {
+    margin-top: 80px;
+}
+.out__projects-images {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    // display: flex;
+    // flex-wrap: wrap;
+    gap: 30px;
+    @include mediaMedium {
+        gap: 15px;
+    }
+    @include mediaMobile {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .img-1 {
+        grid-area: 1 / 1 / 2 / 7;
+    }
+    .img-2 {
+        grid-area: 1 / 7 / 2 / 13;
+    }
+    .img-3 {
+        grid-area: 2 / 1 / 3 / 4;
+    }
+    .img-4 {
+        grid-area: 2 / 4 / 3 / 9;
+    }
+    .img-5 {
+        grid-area: 2 / 9 / 3 / 13;
+    }
+}
+.images__container {
+    display: inline-block;
+    max-width: 570px;
+    // height: auto;
+    // background-image: url(../../img/our-projects/img-5.png);
+    // background-size: cover;
+
+    position: relative;
+    // z-index: 100;
+}
+.our__projects-img {
+    // flex: 1 1 auto;
+    // display: block;
+    // max-width: 100%;
+    // min-width: 20%;
+}
+
+.header__text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $accent-dark;
+    opacity: 0.8;
+    color: white;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    // text-align: center;
+    // z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__text {
+    width: 80%;
+    // display: flex;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+}
+.project__img-title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    color: $white;
+    @include mediaTablet {
+        font-size: 45px;
+        line-height: 45px;
+    }
+    @include mediaMedium {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+.project_img-button {
+    margin-top: 30px;   
+    // float: right;
+    align-self: flex-end;
+}
+.button-details{
+    justify-content: start;
+}

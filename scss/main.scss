@@ -1,0 +1,17 @@
+// Base
+@import './base/fonts';
+@import './base/vars';
+@import './base/reset';
+@import './base/mixins';
+@import './base/base';
+
+
+// Blocks
+@import './blocks/header';
+@import './blocks/nav-icon';
+@import './blocks/about';
+@import './blocks/main-tasks';
+@import './blocks/our-project';
+@import './blocks/input';
+@import './blocks/feedback';
+@import './blocks/footer';
